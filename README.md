@@ -8,7 +8,7 @@ This is example code how to implement this package.
 ### Get Remote Video Image Preview extracting metadata in web pages
 ``` Dart
 
-CachedVideoPreview(
+CachedVideoPreviewWidget(
   path: 'https://www.youtube.com/watch?v=b_sQ9bMltGU',
   type: SourceType.remote,
   remoteImageBuilder: (BuildContext context, url) =>
@@ -20,7 +20,7 @@ CachedVideoPreview(
 ### Get Remote Video Image Preview from video url
 ``` Dart
 
-CachedVideoPreview(
+CachedVideoPreviewWidget(
   path: 'https://flutter.github.io/assets-for-api-docs/assets/videos/bee.mp4',
   type: SourceType.remote,
   httpHeaders: const <String, String>{},
@@ -33,7 +33,7 @@ CachedVideoPreview(
 ``` Dart
 final File video = File('video.mp4');
 
-CachedVideoPreview(
+CachedVideoPreviewWidget(
   path: video.path,
   type: SourceType.local,
   fileImageBuilder: (context, bytes) =>
